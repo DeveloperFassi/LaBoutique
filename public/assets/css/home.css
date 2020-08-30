@@ -1,0 +1,10 @@
+#home-overlay {
+    background-image: url("../img/Friends_watching_tv.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 105vh;
+    width: 100vw;
+    margin-top: -7rem;
+}
