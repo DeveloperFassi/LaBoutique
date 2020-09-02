@@ -1,10 +1,41 @@
-#home-overlay {
-    background-image: url("../../img/Friends_watching_tv.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    min-height: 105vh;
-    width: 100vw;
-    margin-top: -7rem;
+.home-overlay {
+  position: relative;
+  min-height: 105vh;
+  width: 100vw;
+  margin-top: -7rem;
+  justify-content: center;
+  text-align: center;
+
+  hr{
+    width: 30%;
+    border: 1px solid black;
+  }
+
+  div{
+    margin: 2.5rem;
+  }
+
+  .title-h3{
+    text-transform: uppercase;
+    font-family: "Montserrat ExtraLight", sans-serif;
+  }
+}
+
+.home-overlay:before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../../img/Friends_watching_tv.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 105vh;
+  width: 100vw;
+  margin-top: -7rem;
+  opacity: 0.7;
 }

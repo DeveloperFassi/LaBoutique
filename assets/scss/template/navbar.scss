@@ -1,13 +1,15 @@
-nav{
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
+@import "assets/scss/base/colors";
+
+nav {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
 }
 
-.navbar{
-    border-style: none !important;
+.navbar {
+  border-style: none !important;
 }
 
-.navbar-brand{
-    font-weight: bold;
-    font-size: 1.6rem;
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.6rem;
 }
