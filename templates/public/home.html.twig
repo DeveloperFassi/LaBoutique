@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
+    {{ encore_entry_link_tags('home') }}
 {% endblock %}
 
 {% block body %}
@@ -45,4 +45,9 @@
         aliquam asperiores cupiditate eligendi error eveniet fugit hic nemo nihil, officia omnis perferendis quas qui
         repellendus, totam. Nesciunt.
     </div>
+{% endblock %}
+
+
+{% block javascripts %}
+{{ encore_entry_script_tags('home') }}
 {% endblock %}
