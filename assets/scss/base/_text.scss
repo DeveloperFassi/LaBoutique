@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
-
 .title-h1{
-  //font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 1.6px;
+  font-size: 34px;
+  line-height: 1.6;
   letter-spacing: 2px;
+
+  &--montserrat{
+    @extend .title-h1;
+    font-family: 'Montserrat ExtraBold', sans-serif;
+  }
+
+  &--bigger{
+    @extend .title-h1;
+    font-size: 54px;
+  }
 }
 
 .title-h2{
-  //font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.6px;
+  line-height: 1.6;
   letter-spacing: 2px;
+
+  &--montserrat{
+    @extend .title-h2;
+    font-family: Montserrat, sans-serif;
+  }
 }
 
 .title-h3{

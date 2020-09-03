@@ -1,3 +1,5 @@
+@import "../base/annimations";
+@import "../base/colors";
 .home-overlay {
   position: relative;
   min-height: 105vh;
@@ -13,6 +15,20 @@
 
   div{
     margin: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  button{
+    text-transform: uppercase;
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+
+    &:hover{
+      @extend .pulsate-fwd;
+      background-color: $color-white;
+      color: $color-black;
+    }
   }
 
   .title-h3{
