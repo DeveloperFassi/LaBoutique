@@ -1,0 +1,14 @@
+//import bootstrap and skitchy theme of bootswatch
+@import "./node_modules/bootswatch/dist/sketchy/variables";
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootswatch/dist/sketchy/bootswatch";
+
+
+//Import fonts
+@import "assets/fonts/Montserrat/stylesheet.scss";
+
+//import colors variables and text default
+@import "base/text";
+@import "base/colors";
+@import "base/annimations";
+@import "template/base";

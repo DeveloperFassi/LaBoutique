@@ -1,0 +1,62 @@
+.title-h1{
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+
+  &--montserrat{
+    @extend .title-h1;
+    font-family: 'Montserrat ExtraBold', sans-serif;
+  }
+
+  &--bigger{
+    @extend .title-h1;
+    font-size: 54px;
+  }
+}
+
+.title-h2{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+
+  &--bigger{
+    @extend .title-h2;
+    font-size: 28px;
+  }
+
+  &--montserrat{
+    @extend .title-h2;
+    font-family: Montserrat, sans-serif;
+  }
+}
+
+.title-h3{
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.title-h4{
+  font-family: 'Montserrat Thin', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.p-primary{
+  font-family: 'Montserrat Medium', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.p-default{
+  font-family: 'Montserrat Light', sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+}
