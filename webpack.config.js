@@ -29,6 +29,7 @@ Encore
     .addEntry('app', './assets/js/app.js')
     .addEntry('nav', './assets/js/nav.js')
     .addEntry('home', './assets/js/home.js')
+    .addEntry('cgu', './assets/js/cgu.js')
     //.addEntry('page2', './assets/js/page2.js')
     .addStyleEntry('global', './assets/scss/global.scss')
 
