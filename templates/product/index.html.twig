@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos abonnements {% endblock %}
+{% block stylesheets %}
+    <style>
+        .cards-wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <div class="cards-wrapper">
+    {% for product in products %}
+        <div class="card" style="width: 28rem; box-shadow: 1px 1px 30px 4px;">
+            <img src="{{ asset('build/popcorn.png') }}" class="card-img-top" alt="popcorn">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <div class="justify-content-between d-flex">
+                    <a href="{{ path('cart_add', {'id': product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
