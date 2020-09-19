@@ -1,1 +1,1 @@
-import '../scss/template/navbar.scss'
+import '../scss/template/partials/navbar.scss'

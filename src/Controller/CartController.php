@@ -61,5 +61,11 @@ class CartController extends AbstractController
             throw new Exception('Id can\'t be 0');
         }
         $session->set('cart', $cart);
+        return $this->redirectToRoute('cart_index');
+    }
+
+    public function updateCart(SessionInterface $session)
+    {
+
     }
 }

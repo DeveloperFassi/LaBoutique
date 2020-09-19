@@ -30,6 +30,7 @@ Encore
     .addEntry('nav', './assets/js/nav.js')
     .addEntry('home', './assets/js/home.js')
     .addEntry('cgu', './assets/js/cgu.js')
+    .addEntry('cart', './assets/js/cart.js')
     //.addEntry('page2', './assets/js/page2.js')
     .addStyleEntry('global', './assets/scss/global.scss')
 

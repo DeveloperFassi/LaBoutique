@@ -2,29 +2,63 @@
 
 {% block title %}Hello CartController!{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('cart') }}
+{% endblock %}
 {% block body %}
     <div class="container">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Product name</th>
-                <th>Quantity</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for item in cartToDisplay %}
-                <tr>
-                    <td>{{ item.product.name }}</td>
-                    <td>{{ item.quantity }}</td>
-                </tr>
-            {% endfor %}
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td class="text-right">Total :</td>
-                    <td>{{ total }}</td>
-                </tr>
-            </tfoot>
-        </table>
+        <h1 class="title-h1 text-left">
+            Votre panier
+        </h1>
+        <div class="row justify-content-between">
+            <div class="col-md-6">
+                <section class="cart-details">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Product name</th>
+                            <th>Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in cartToDisplay %}
+                            <tr>
+                                <td>{{ item.product.name }}</td>
+                                <td>
+                                    <i class="fas fa-minus-circle" onclick="minus()"></i>
+                                    <span id="item-quantity">{{ item.quantity }}</span>
+                                    <i class="fas fa-plus-circle" onclick="plus()"></i>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td class="text-right">Total :</td>
+                            <td>{{ total }}</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section class="cart-resume">
+                    <h3 class="title-h3">
+                        Total panier
+                    </h3>
+                    <hr>
+                    <div>
+                        <div>Total</div>
+                        <div>{{ total | format_currency('EUR', {rounding_mode: 'floor'}, locale='fr') }}</div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('cart') }}
 {% endblock %}
